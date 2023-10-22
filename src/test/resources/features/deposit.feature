@@ -1,5 +1,5 @@
 # 6410406649 Thanrada Sonnakhongcharoen
-Feature: withdraw
+Feature: deposit
     As a customer
     I want to deposit to my account using ATM
 
