@@ -1,3 +1,4 @@
+// 6410406649 Thanrada Sonnakhongcharoen
 package ku.atm;
 
 import io.cucumber.java.Before;
@@ -68,6 +69,11 @@ public class StepDefATM {
     public void customer_id_account_balance_is(int id, double balance) {
         assertEquals(balance,
                      bank.getCustomer(id).getAccount().getBalance());
+    }
+
+    @When("I deposit {int} to my account with ATM")
+    public void i_deposit_to_my_account_with_ATM(int amount) {
+        atm.deposit(amount);
     }
 
 }
